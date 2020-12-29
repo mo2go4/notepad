@@ -41,14 +41,20 @@ strike{background-color:#d9d9d9}strike:hover{background-color:#ffffff;text-decor
 
 <tr>
 <td>201229</td>
+<td>1727</td>
+<td>neither <code>and</code> nor <code>or</code> can be an array function&mdash;<code>=filter(a1:a9,isblank(a1:a9)+isblank(b1:b9)=0)</code> rather than <code>=filter(a1:a9,not(or(isblank(a1:a9),isblank(b1:b9))))</code></td>
+</tr>
+
+<tr>
+<td>201229</td>
 <td>1710</td>
-<td>this is simpler and better&mdash;<code>=FILTER(A1:A9,NOT(ISBLANK(A1:A9)))</code></td>
+<td>this is simpler and better&mdash;<code>=filter(a1:a9,not(isblank(a1:a9)))</code></td>
 </tr>
 
 <tr>
 <td>201229</td>
 <td>1703</td>
-<td><a href=https://www.ablebits.com/office-addins-blog/2018/11/28/remove-blank-cells-excel/>How to remove blank cells in Excel</a>&mdash;<code>=IFERROR(INDEX(A$1:A$9,SMALL(IF(ISBLANK(A$1:A$9),"",ROW(A$1:A$9)),ROW())),"")</code></td>
+<td><a href=https://www.ablebits.com/office-addins-blog/2018/11/28/remove-blank-cells-excel/>How to remove blank cells in Excel</a>&mdash;<code>=iferror(index(a$1:a$9,small(if(isblank(a$1:a$9),"",row(a$1:a$9)),row())),"")</code></td>
 </tr>
 
 <tr>
