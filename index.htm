@@ -71,6 +71,12 @@ strike{background-color:#d4d4d4}strike:hover{background-color:#ffffff;text-decor
 
 <tr>
 <td>240228</td>
+<td>2348</td>
+<td>some github observations: 1. github에서 private repository는 외부인에게 보이지 않음 2. private repository clone 시 auth 필요 3. git clone에서 http 시 warning 후 https로 변경 (trailing / 생략 시 no warning) 4. empty repository clone 시 warning 5. branch gh-pages 생성 시 master branch 필요 6. repository 최초 생성 시 master branch도 없음 7. 아무런 변경 없는 commit 시 git commit --allow-empty --allow-empty-message -m "" 가능 8. 아무 변경 없이 첫 commit 생성 &rarr; master branch 생성 &rarr; gh-pages branch 생성 &rarr; commit 후 push gh-pages하면 github에 master branch commit은 보이지 않고 gh-pages branch의 첫 commit부터 보임 9. git branch gh-pages 생성 후 git checkout gh-pages 없이 master branch에서 push gh-pages 시도하면 가능하긴 한데 바람직하진 않은 듯 10. <a href=https://stackoverflow.com/questions/28744980>GitHub Pages for Private Repository [closed]</a>: As of August 2020: It is only possible with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server</td>
+</tr>
+
+<tr>
+<td>240228</td>
 <td>2333</td>
 <td>github에서 gh-pages가 필요할 때: 1. github에서 repository 생성 후 (and unwatch if needed) 2. git clone으로 내려받고 3. git config 설정 후 4. git branch gh-pages &rarr; git checkout gh-pages 5. 이후 동일하게 전개</td>
 </tr>
