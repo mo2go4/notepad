@@ -76,6 +76,12 @@ strike{background-color:#d4d4d4}strike:hover{background-color:#ffffff;text-decor
 -->
 
 <tr>
+<td>240403</td>
+<td>2157</td>
+<td><a href=https://blog.naver.com/6463hunter/223405324654>some sas observations</a>: 1. the smallest ods set for sgplot would probably be (ods listing close;ods listing gpath;ods graphics reset)—then the output would be SGPlot.png 2. two vbars with different responses overlay the bars first because groupdisplay='s default is stack rather than cluster 3. transpose &rarr; group=_NAME_ draws the same output as well because of the same previous reason 4. groupdisplay=cluster solves the problem; clusterwidth= can be between 0 (thinest bar) and .8 (default) and 1 (leave no space) 5. nooutline works, but fillattrs=(color=) doesn't; separate styleattrs datacolors=() works 6. if the response variable doesn't have a label, SGPlot.png displays COL1 (sum), for example; label='' leaves an ugly single quote; label=' ' removes the label and adds the ugly (sum); label='COL1' erases the unwanted (sum) correctly</td>
+</tr>
+
+<tr>
 <td>240402</td>
 <td>1042</td>
 <td><a href=https://m.manganelo.com/manga-kk88604>Sangokushi Manga Online Free - Manganelo</a></td>
