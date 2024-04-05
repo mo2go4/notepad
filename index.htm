@@ -77,6 +77,12 @@ strike{background-color:#d4d4d4}strike:hover{background-color:#ffffff;text-decor
 
 <tr>
 <td>240405</td>
+<td>1752</td>
+<td>some miktex observations: 1. installing miktex-portable creates one folder (texmfs) and one cmd file (miktex-portable.cmd) - probably don't need a new folder 2. pdflatex in miktex also allows --shell-escape (as the second-last item as usual), but don't know how to do this with pdflatex+makeindex+bibtex 3. however, miktex cannot directly run curl, so its absolute path is needed: C:/Windows/System32/curl.exe 4. use slash (/) rather than backslash (\) 5. escape twice for %20 (\string\%20) inside \input{} 6. --stderr NUL is needed to suppress unwanted details</td>
+</tr>
+
+<tr>
+<td>240405</td>
 <td>0843</td>
 <td><a href=https://tex.stackexchange.com/questions/82699>How to enable shell-escape in TeXworks?</a></td>
 </tr>
