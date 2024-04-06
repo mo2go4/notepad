@@ -76,6 +76,12 @@ strike{background-color:#d4d4d4}strike:hover{background-color:#ffffff;text-decor
 -->
 
 <tr>
+<td>240406</td>
+<td>1302</td>
+<td><a href=https://documentation.sas.com/doc/ja/vdmmlcdc/8.1/ledsoptsref/p1njbys6vjpehjn1q0p00h0tnjym.htm>LABEL= Data Set Option</a>: 1. if a data step loads a data set via a set statement, the loaded set would lose its label 2. if a proc append step loads a data set for the first time, the loaded set would not lose its label</td>
+</tr>
+
+<tr>
 <td>240405</td>
 <td>2256</td>
 <td>how are the jkp factors clustered? <code>filename a temp;proc http url='https://github.com/bkelly-lab/ReplicationCrisis/raw/master/GlobalFactors/Factor%20Details.xlsx' out=a;proc import file=a dbms=xlsx out=a;filename b url 'https://github.com/bkelly-lab/ReplicationCrisis/raw/master/GlobalFactors/Cluster%20Labels.csv';proc import file=b dbms=csv out=b;guessingrows=max;data a;set a;a+1;proc sql;create table c as select * from a join b on abr_jkp=characteristic order by a;quit;</code></td>
