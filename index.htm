@@ -78,7 +78,7 @@ strike{background-color:#d4d4d4}strike:hover{background-color:#ffffff;text-decor
 <tr>
 <td>240406</td>
 <td>1302</td>
-<td><a href=https://documentation.sas.com/doc/ja/vdmmlcdc/8.1/ledsoptsref/p1njbys6vjpehjn1q0p00h0tnjym.htm>LABEL= Data Set Option</a>: 1. if a data step loads a data set via a set statement, the loaded set would lose its label 2. if a proc append step loads a data set for the first time, the loaded set would not lose its label</td>
+<td><a href=https://documentation.sas.com/doc/ja/vdmmlcdc/8.1/ledsoptsref/p1njbys6vjpehjn1q0p00h0tnjym.htm>LABEL= Data Set Option</a>: 1. if a data step loads a data set via a set statement, the loaded set would lose its label 2. if a proc append step loads a data set for the first time, the loaded set would not lose its label 3. (although this is not a note about label) suppose there are two data sets who have the same variable with different lengths &rarr; (1) if proc append adds short to long, it executes with a warning message (2) if proc append adds long to short, it stops with an error message (3) if proc append with force adds long to short, it executes with a warning message cutting the long</td>
 </tr>
 
 <tr>
